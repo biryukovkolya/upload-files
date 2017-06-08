@@ -1,0 +1,15 @@
+#define	IDM_SETTINGS	1
+#define	IDM_EXIT		2
+
+#define	IDD_BLACK		10
+#define	IDD_BLUE		11
+#define	IDD_GREEN		12
+#define	IDD_CYAN		13
+#define	IDD_RED			14
+#define	IDD_MAGENTA		15
+#define	IDD_YELLOW		16
+#define	IDD_WHITE		17
+
+#define	IDD_N			20
+
+#define	IDD_PAINT		30
