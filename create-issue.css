@@ -1,0 +1,171 @@
+.create-issues {
+    padding: 10px 0
+}
+
+.create-issues--head {
+    padding: 0 0 30px;
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.h2, h2 {
+    font-size: 2rem;
+}
+
+.col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.form-row {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+
+.form-row > .col, .form-row > [class*=col-] {
+    box-sizing: border-box;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.form-group {
+    margin-bottom: .75rem;
+    position: relative;
+}
+
+.form-field {
+    margin-bottom: .25rem;
+    position: relative;
+}
+
+.form-field.custom-textarea::before {
+    background-color: #fff;
+    border-radius: .25rem;
+    content: "";
+    top: 1px;
+    height: 1.75rem;
+    position: absolute;
+    left: 0.1rem;
+    width: calc(100% - 1.75rem);
+}
+
+.form-control {
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    color: #495057;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 1.75rem .75rem .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    width: 100%;
+}
+
+.form-group label {
+    color: #9299a2;
+    display: inline-block;
+    font-size: inherit;
+    left: .75rem;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: font-size .25s ease, transform .25s ease;
+    will-change: transform, font-size;
+}
+
+.form-control:focus + label,
+.form-control:valid + label {
+    font-size: .85rem;
+    transform: translateY(calc(-50% - 1rem));
+}
+
+.form-description,
+.form-message {
+    color: #9299a2;
+    font-size: .85rem;
+}
+
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+    display: inline-block;
+    padding: 1.75rem 1.75rem .375rem .75rem;
+    vertical-align: middle;
+}
+
+.form-control.custom-select + label,
+.form-control.custom-textarea + label {
+    font-size: .85rem;
+    top: 0;
+    transform: translateY(.6rem);
+}
+
+.custom-select[multiple] {
+    background-image: none;
+    min-height: 150px;
+    padding-right: .75rem;
+    height: auto;
+}
+
+.progress {
+    background-color: #e9ecef;
+    border-radius: .25rem;
+    display: flex;
+    font-size: .75rem;
+    height: 2rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    transition: width .6s ease;
+}
+
+.progress-bar-animated {
+    animation: progress-bar 1s linear infinite;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+@keyframes progress-bar {
+    from {
+        background-position: 1rem 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
