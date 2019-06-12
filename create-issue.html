@@ -1,0 +1,606 @@
+<link rel="stylesheet" href="create-issue.css">
+<div class="create-issues">
+    <div class="create-issues--head">
+        <div class="create-issues--progress progress mt-1 hidden">
+            <div class="progress-bar progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                 aria-valuenow="0"></div>
+        </div>
+        <div class="create-issues--message hidden"></div>
+    </div>
+    <form action="" class="aui create-issues--form" novalidate="novalidate">
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <input id="summary" class="form-control" name="summary" type="text" required="required">
+                    <label for="summary">Campaign name*</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <input id="customfield_11001" class="form-control"
+                           data-validation-message="This date does not match the defined format of this field"
+                           data-range-validation-message="This date is not within the specified range"
+                           data-aui-dp-uuid="0" name="customfield_11001" format="dd.MM.yyyy" min="0" type="text"
+                           required="required">
+                    <label for="customfield_11001">Fix Date</label>
+                </div>
+                <div class="form-description">Please input</div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row align-items-center">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="components" class="form-control custom-select" name="components" required="required">
+                        <option value="" disabled="disabled" selected="selected">None</option>
+                        <option value="19710">CC</option>
+                        <option value="19708">Pil</option>
+                        <option value="19709">Retail</option>
+                        <option value="19711">Digital</option>
+                        <option value="19712">Internal &amp; Analytics</option>
+                        <option value="19713">Other</option>
+                    </select>
+                    <label for="components">Swim Lane</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="labels" class="form-control custom-select" name="labels" multiple="multiple"
+                            required="required">
+                        <option value="" disabled="disabled" selected="selected">None</option>
+                        <option value="web">Web</option>
+                        <option value="e-mail">E-mail</option>
+                        <option value="sms">SMS</option>
+                        <option value="SMS">SMM</option>
+                        <option value="Direct Mail">Direct Mail</option>
+                        <option value="Branch">Branch</option>
+                        <option value="External">External</option>
+                        <option value="Calls (Outbound/Inbound)">Calls (Outbound/Inbound)</option>
+                        <option value="CBOL/MBOL">CBOL/MBOL</option>
+                    </select>
+                    <label for="labels">Channels</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <input id="description-1" class="form-control" name="description-1" type="text" required="required">
+                    <label for="description-1">Product / APA</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1"
+                            required="required">
+                        <option value="" disabled="disabled" selected="selected">None</option>
+                        <option value="New campaign">New campaign</option>
+                        <option value="Existing campaign correction">Existing campaign correction</option>
+                    </select>
+                    <label for="description-1">Task type</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1"
+                            required="required">
+                        <option value="" disabled="disabled" selected="selected">None</option>
+                        <option value="Acquistion">Acquistion</option>
+                        <option value="X-Sell">X-Sell</option>
+                        <option value="Portfolio/Engagement">Portfolio/Engagement</option>
+                        <option value="Servise">Servise</option>
+                        <option value="Regulatory">Regulatory</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="description-1">Campaign type</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1"
+                            required="required">
+                        <option value="" disabled="disabled" selected="selected">None</option>
+                        <option value="Ad-hoc">Ad-hoc</option>
+                        <option value="Monthly">Monthly</option>
+                        <option value="Quarterly">Quarterly</option>
+                        <option value="Yearly">Yearly</option>
+                    </select>
+                    <label for="description-1">Frequency</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <input id="description-1" class="form-control" name="description-1" type="text" required="required">
+                    <label for="description-1">KPI number of customers acquired</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <input id="description-1" class="form-control" name="description-1" type="text" required="required">
+                    <label for="description-1">KPI existing base coverage</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <input id="description-1" class="form-control" name="description-1" type="text" required="required">
+                    <label for="description-1">KPI services</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <input id="description-1" class="form-control" name="description-1" type="text" required="required">
+                    <label for="description-1">Revenue</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1"
+                            required="required">
+                        <option value="" disabled="disabled" selected="selected">None</option>
+                        <option value="Sendsay">Sendsay</option>
+                        <option value="KANA">KANA</option>
+                    </select>
+                    <label for="description-1">E-mail channel</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1"
+                            required="required">
+                        <option value="" disabled="disabled" selected="selected">None</option>
+                        <option value="One-Way">One-Way</option>
+                        <option value="Two-Way">Two-Way</option>
+                    </select>
+                    <label for="description-1">SMS type</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1"
+                            required="required">
+                        <option value="" disabled="disabled" selected="selected">None</option>
+                        <option value="Ad-hoc">Ad-hoc</option>
+                        <option value="Regular">Regular</option>
+                    </select>
+                    <label for="description-1">SMS Frequency</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1"
+                            required="required">
+                        <option value="" disabled="disabled" selected="selected">None</option>
+                        <option value="SMS">SMS</option>
+                        <option value="SMS/Viber">SMS/Viber</option>
+                    </select>
+                    <label for="description-1">SMS channel</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field custom-textarea">
+                    <textarea id="description-1" class="form-control custom-textarea" name="description-1" type="text"
+                              rows="5"></textarea>
+                    <label for="description-1">SMS test phones</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field custom-textarea">
+                    <textarea id="description-1" class="form-control custom-textarea" name="description-1" type="text"
+                              rows="5"></textarea>
+                    <label for="description-1">Idea/Purpose</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field custom-textarea">
+                    <textarea id="description-1" class="form-control custom-textarea" name="description-1" type="text"
+                              rows="5"></textarea>
+                    <label for="description-1">Target audience</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field custom-textarea">
+                    <textarea id="description-1" class="form-control custom-textarea" name="description-1" type="text"
+                              rows="5"></textarea>
+                    <label for="description-1">What customer is expected to do</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field custom-textarea">
+                    <textarea id="description-1" class="form-control custom-textarea" name="description-1" type="text"
+                              rows="5"></textarea>
+                    <label for="description-1">Reward for target action (Promo)</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field custom-textarea">
+                    <textarea id="description-1" class="form-control custom-textarea" name="description-1" type="text"
+                              rows="5"></textarea>
+                    <label for="description-1">Previous campaign example (optional)</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <h2>Information related to campaign management</h2>
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check" selected="selected">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Geography</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Resident/nationality status</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check" selected="selected">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Tax residence (exclude us tax residence for investments)</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Preferred spoken/written language</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check" selected="selected">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Main/Supplementary cards</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">CitiOne</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check" selected="selected">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">CitiPriority</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">СitiGold</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check" selected="selected">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">CPC</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Сredit Cards, where applicable card color/card type</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check" selected="selected">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Credit Card Ultima holders</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Credit cards block codes</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check" selected="selected">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Debit Cards, where applicable card type</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Staff</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check" selected="selected">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">C@W</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">WAU</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check" selected="selected">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Customers with MIR profile</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">GDPR clients</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check" selected="selected">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Ok to contact flags</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Call/sms/email counter</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check" selected="selected">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Marketing consent</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Compliance negative list</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check" selected="selected">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Closed customers</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Deceased customers</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check" selected="selected">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Customers from C@W DND companies</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">OWS: Pure CC clients with non-Russia home or mailing addresses</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check" selected="selected">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Customers with living address / domicile in EU countries</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+            <div class="form-group col-6">
+                <div class="form-field">
+                    <select id="description-1" class="form-control custom-select" name="description-1">
+                        <option value="Do not check">Do not check</option>
+                        <option value="Check and exclude">Check and exclude</option>
+                    </select>
+                    <label for="description-1">Customers with SDN flag</label>
+                </div>
+                <div class="form-message">&nbsp;</div>
+            </div>
+        </div>
+
+
+        <div class="aui-group submit-group">
+            <div class="aui-item">&nbsp;</div>
+            <div class="buttons-container aui-item">
+                <div class="buttons">
+                    <button type="submit">Create issue</button>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
